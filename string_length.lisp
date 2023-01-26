@@ -1,0 +1,5 @@
+(setq count 0)
+(defun len(L)
+(if (NOT (NULL L)) (prog() (setq count (+ count 1)) (len (cdr L))) (print count))
+)
+(len '(A B C D))

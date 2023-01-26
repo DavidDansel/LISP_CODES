@@ -1,0 +1,10 @@
+;;;this uses repetition to find the length
+(setq count 0)
+(defun len(L)
+     (prog() 
+LOOP (setq count (+ count 1))
+     (setq L (cdr L))
+     (if (NOT (NULL  L)) (GO LOOP) (print count)) 
+     )
+)
+(len '(I am the smartest programmer on earth))
